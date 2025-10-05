@@ -263,7 +263,7 @@ Primero generamos el par de claves en `debian1`:
 ssh-keygen -t ed25519
 ```
 
-El comando nos solicitara un passphrase (frase de paso) para proteger la clave privada. Esto es opcional, en este caso pulsaremos <Enter> dos veces para dejarlo vacío.
+El comando nos solicitara un passphrase (frase de paso) para proteger la clave privada. Esto es opcional, en este caso pulsaremos `<Enter>` dos veces para dejarlo vacío.
 
 Esto generará un par de claves en `~/.ssh/id_ed25519` (clave privada) y `~/.ssh/id_ed25519.pub` (clave pública). Podemos inspeccionar el contenido de estos archivos con
 
@@ -300,9 +300,17 @@ Para que se apliquen los cambios, reiniciaremos el servicio SSH:
 sudo systemctl restart ssh
 ```
 
+## Montaje Final
+
+\begin{center}
+\includegraphics[width=0.8\linewidth]{images/red.png}
+\end{center}
+
 ## Entrega
 
-Para esta práctica, solo sera necesario que me entregueis una serie de capturas de pantalla:
+Para esta práctica, solo sera necesario que me entregueis una serie de capturas de pantalla en un zip llamado `Practica1SR-<nombre>-<apellido>.zip`, donde `<nombre>` es vuestro nombre y `<apellido>` es vuestro apellido.
+
+Capturas a incluir:
 
 1. Salida del comando `ping debian1` desde `debian2`.
 2. Salida del comando `ping debian2` desde `debian1`.
