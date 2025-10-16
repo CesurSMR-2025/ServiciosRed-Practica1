@@ -76,8 +76,8 @@ Si cerramos la terminal y la volvemos a abrir, deberíamos ver el nuevo nombre d
 También podemos añadir los nombres de las máquinas al archivo `/etc/hosts` para facilitar la resolución de nombres en la red local. Edita el archivo `/etc/hosts` en ambas máquinas y agrega las siguientes líneas:
 
 ```
-127.0.1.1 debian1
-127.0.1.2 debian2
+192.168.1.1 debian1
+192.168.1.2 debian2
 ```
 
 De esta forma, podremos utilizar los nombres `debian1` y `debian2` para referirnos a las máquinas en lugar de sus direcciones IP.
