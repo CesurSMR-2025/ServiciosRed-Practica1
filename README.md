@@ -77,7 +77,7 @@ También podemos añadir los nombres de las máquinas al archivo `/etc/hosts` pa
 
 ```
 127.0.1.1 debian1
-127.0.1.1 debian2
+127.0.1.2 debian2
 ```
 
 De esta forma, podremos utilizar los nombres `debian1` y `debian2` para referirnos a las máquinas en lugar de sus direcciones IP.
