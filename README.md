@@ -73,6 +73,15 @@ Para cambiar el nombre de una maquina en Debian, edita el archivo `/etc/hostname
 
 Si cerramos la terminal y la volvemos a abrir, deberíamos ver el nuevo nombre de la máquina en el prompt.
 
+También podemos añadir los nombres de las máquinas al archivo `/etc/hosts` para facilitar la resolución de nombres en la red local. Edita el archivo `/etc/hosts` en ambas máquinas y agrega las siguientes líneas:
+
+```
+127.0.1.1 debian1
+127.0.1.1 debian2
+```
+
+De esta forma, podremos utilizar los nombres `debian1` y `debian2` para referirnos a las máquinas en lugar de sus direcciones IP.
+
 ## Creación de las Interfaces de Red (Virtual Box)
 
 Por defecto las maquinas virtuales de VirtualBox tienen configurado unicamente un adaptador de red el cual las conecta con la maquina fisica y darle acceso a internet a traves de esta. Para permitir la comunicacion entre las dos maquinas virtuales, es necesario crear y configurar un segundo adaptador de red en cada una de ellas. Esto seria equivalente a conectar ambas maquinas a un switch o con un cable directamente.
